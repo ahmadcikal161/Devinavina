@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devina</title>
+
+<style>
+body {  
+  margin:0; 
+  font-family:Arial; 
+  background: linear-gradient(135deg, #FFD1DC, #FFB6C1); 
+}
+
+header { 
+  background:#FF69B4; 
+  color:white; 
+  text-align:center; 
+  padding:20px; 
+}
+
+nav { 
+  display:flex; 
+  justify-content:center; 
+  gap:20px; 
+  background:#FF85C1; 
+  padding:10px; 
+}
+
+nav a { 
+  color:white; 
+  font-weight:bold; 
+  cursor:pointer; 
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#ffe6f2;
+}
+
+section { 
+  display:none; 
+}
+
+section.active { 
+  display:block; 
+}
+
+.container { 
+  display:flex; 
+  gap:20px; 
+  padding:20px; 
+  flex-wrap:wrap; 
+}
+
+article { 
+  flex:3; 
+  background:#FFC0CB; 
+  padding:20px; 
+  border-radius:15px; 
+  color:#660033;
+}
+
+aside { 
+  flex:1; 
+  background:#FFB6C1; 
+  padding:20px; 
+  text-align:center; 
+  border-radius:15px; 
+}
+
+aside img { 
+  width:100%; 
+  border-radius:10px; 
+}
+
+.produk-container { 
+  display:flex; 
+  flex-wrap:wrap; 
+  gap:20px; 
+  justify-content:center; 
+}
+
+.card { 
+  background:#FFF0F5; 
+  padding:15px; 
+  width:200px; 
+  border-radius:15px; 
+  box-shadow:0 0 10px rgba(255,105,180,0.2); 
+  text-align:center; 
+}
+
+.card img { 
+  width:100%; 
+  border-radius:10px; 
+}
+
+button { 
+  background:#FF1493; 
+  color:white; 
+  border:none; 
+  padding:8px; 
+  border-radius:8px; 
+  cursor:pointer; 
+}
+
+button:hover{
+  background:#FF69B4;
+}
+
+.struk-box{
+  background:#FFE4EC;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  border-radius:15px;
+}
+
+footer { 
+  background:#FF69B4; 
+  color:white; 
+  text-align:center; 
+  padding:10px; 
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>clothing store depii🐞</h1>
+<p>clothes</p>
+</header>
+
+<nav>
+<a onclick="showSection('beranda')">beranda</a>
+<a onclick="showSection('owner')">owner</a>
+<a onclick="showSection('produk')">produk</a>
+<a onclick="showSection('kontak')">kontak</a>
+</nav>
+
+<section id="beranda" class="active">
+<div class="container">
+
+<article>
+<h2>🎀WELCOME TO OUR CUTE LITTLE FASIHON WORLD 🎀</h2>
+<p>tempat outfit cewe imut, manis, gamesin, dan bikin makin pede🧸✨
+style kekinian buat anak cantik yang mau tampil cute tapi tetep stylish</p>
+    
+   <p> 🍓cute • girly • gemoy • aesthetic🍓</p>
+      <p>  🐾 happy shopping  cutie🐾.</p>
+
+<h2>varian clothes🍒</h2>
+<ul>
+<li>pink blouse pita</li>
+<li>callina top</li>
+<li>pink pants</li>
+<li>coksu pants</li>
+<li>one set piama</li>
+<li>calliandra series 3</li>
+<li>kano cardigan</li>
+<li>cardigan pita keyko</li>
+<li>crunchy brulee pants</li>
+<li>loose pants</li>
+<li>rok tutu dewasa</li>
+<li>luxcy stary pants jeans</li>
+<li>bbk rok kantun</li>
+</ul>
+</article>
+
+</aside>
+
+</div>
+</section>
+
+<section id="owner">
+<div class="container">
+
+<article>
+<h1>profil saya</h1>
+<p>Nama: depina</p>
+<p>Cita-cita: jadi ceo</p>
+<p>Status: calon istri jungkook</p>
+<p>Tugas: kejuruan</p>
+</article>
+
+<aside>
+<img src="https://uploads.onecompiler.io/44cscnp22/44q2eh7t3/a16c0cb59e93007fc2f76a7142bf019c.jpg">
+<p>pict owner</p>
+</aside>
+
+
+</div>
+</section>
+
+<section id="produk">
+
+<h2 style="text-align:center;">Produk clothes</h2>
+
+<div class="produk-container">
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44cscnp22/44pwcn2tg/bc7356d9f34a3b440296fad4d4a8e4f0.jpg">
+<h3>pink blouse pita</h3>
+<p>Rp50.000</p>
+<button onclick="tambah('pink blouse pita',50000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44cscnp22/44pwcn2tg/1e76ed83cca9c16a4316ab5c87993d84.jpg">
+<h3>Cellina top</h3>
+<p>Rp70.000</p>
+<button onclick="tambah('Cellina top',70000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44cscnp22/44pwcn2tg/e0a93a3587a867d453a4ee60d7d518ca.jpg">
+<h3>pink pants</h3>
+<p>Rp190.000</p>
+<button onclick="tambah('celana pink',190000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44cscnp22/44pwcn2tg/4ef5babb4f5980ea3334376fd92b112a.jpg">
+<h3>coksu pants</h3>
+<p>Rp167.000</p>
+<button onclick="tambah('celana coksu',1670000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44cscnp22/44pzc6324/7ca09822d3e15042849653efe1b7cc6d.jpg">
+<h3>one set piama</h3>
+<p>Rp140.000</p>
+<button onclick="tambah('one set piama',140000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166049.jpg">
+<h3>calliandra series 3 </h3>
+<p>Rp110.000</p>
+<button onclick="tambah('calliandra series 3',110000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166051.jpg">
+<h3>kano cardigan</h3>
+<p>Rp103.000</p>
+<button onclick="tambah('kano cardigan',103000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166055.jpg">
+<h3>cardigan pita keyko</h3>
+<p>Rp86.000</p>
+<button onclick="tambah('cardigan pita keyko',86000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166053.jpg">
+<h3>crunchy brulee pants</h3>
+<p>Rp181.000</p>
+<button onclick="tambah('crunchy brulee pants',181000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166059.jpg">
+<h3>loose pants</h3>
+<p>Rp79.000</p>
+<button onclick="tambah('loose pants',79000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166063.jpg">
+<h3>rok tutu dewasa</h3>
+<p>Rp146.000</p>
+<button onclick="tambah('rok tutu dewasa',146000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166061.jpg">
+<h3>luxcy stary pants jeans</h3>
+<p>Rp238.000</p>
+<button onclick="tambah('luxcy stary pants jeans',238000)">+ Keranjang</button>
+</div>
+
+<div class="card">
+<img src="https://uploads.onecompiler.io/44aemrt46/44pzdaryd/166065.jpg">
+<h3>bbk rok katun </h3>
+<p>Rp162.000</p>
+<button onclick="tambah('bbk rok katun',162000)">+ Keranjang</button>
+</div>
+
+
+<div class="struk-box">
+
+<h3 style="text-align:center;">🧾 Struk Belanja</h3>
+
+<div id="struk">
+<p>Belum ada pesanan</p>
+</div>
+
+<hr>
+
+<p>🛒 Item: <span id="item">0</span></p>
+<p>💰 Total: Rp<span id="total">0</span></p>
+
+</div>
+
+<div style="text-align:center; margin-top:15px;">
+<button onclick="batal()">Batal Pesanan</button>
+<button onclick="bayar()">Bayar QRIS</button>
+</div>
+
+<div id="qrisBox" style="display:none; text-align:center; margin-top:20px;">
+<h3>Scan QRIS</h3>
+<img src="https://uploads.onecompiler.io/44cscnp22/44q2eh7t3/Screenshot_2026-05-22-21-16-56-91.png" width="150">
+<p>Silakan scan untuk pembayaran</p>
+</div>
+
+</section>
+
+<section id="kontak">
+<div class="container">
+
+<article>
+<h2>Kontak</h2>
+<p>Email: depijeky450@gmail.com</p>
+<p>WhatsApp: 083823160462</p>
+</article>
+
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 store by depii</p>
+</footer>
+
+<script>
+let jumlahItem = 0;
+let totalHarga = 0;
+let keranjang = [];
+
+function showSection(id){
+  const sections = document.querySelectorAll('section');
+
+  sections.forEach(s => 
+    s.classList.remove('active')
+  );
+
+  document.getElementById(id).classList.add('active');
+}
+
+function tambah(nama,harga){
+
+  keranjang.push({nama,harga});
+
+  jumlahItem++;
+  totalHarga += harga;
+
+  updateStruk();
+
+  alert(nama + ' ditambahkan ke keranjang!');
+}
+
+function hapus(index){
+
+  totalHarga -= keranjang[index].harga;
+  jumlahItem--;
+
+  keranjang.splice(index,1);
+
+  updateStruk();
+
+  alert('Pesanan dibatalkan!');
+}
+
+function updateStruk(){
+
+  document.getElementById('item').innerText = jumlahItem;
+  document.getElementById('total').innerText = totalHarga;
+
+  let struk = document.getElementById('struk');
+
+  if(keranjang.length == 0){
+
+    struk.innerHTML = "<p>Belum ada pesanan</p>";
+
+    return;
+  }
+
+  struk.innerHTML = "";
+
+  keranjang.forEach((item,index)=>{
+
+    struk.innerHTML += `
+      <div style="margin-bottom:10px; background:#fff0f5; padding:10px; border-radius:10px;">
+        <p>${item.nama} - Rp${item.harga}</p>
+
+        <button onclick="hapus(${index})">
+          🐙cancel
+        </button>
+      </div>
+    `;
+  });
+}
+
+function batal(){
+
+  jumlahItem = 0;
+  totalHarga = 0;
+  keranjang = [];
+
+  updateStruk();
+
+  document.getElementById('qrisBox').style.display = "none";
+
+  alert('Semua pesanan dibatalkan!');
+}
+
+function bayar(){
+
+  if(totalHarga == 0){
+
+    alert('Belum ada pesanan!');
+
+  } else {
+
+    document.getElementById('qrisBox').style.display = "block";
+
+    alert('Silakan scan QRIS untuk bayar');
+
+  }
+}
+</script>
+
+</body>
+</html>
